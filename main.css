@@ -1,6 +1,6 @@
 html,
 body {
-  font-family: "Rubik", sans-serif;
+  font-family: sans-serif;
   text-rendering: optimizeLegibility;
   font-size: 100%;
   line-height: 1.5;
@@ -26,10 +26,6 @@ body {
   text-align: center;
 }
 
-h1 {
-  font-family: "Inter", sans-serif;
-}
-
 p {
   margin: 1.25rem 0;
 }
@@ -39,9 +35,10 @@ p span {
   white-space: nowrap;
 }
 
-a {
-  color: #1b7fff;
-  text-decoration: none;
+a,
+.leaflet-control-attribution a {
+  color: black;
+  text-decoration: underline;
 }
 
 #elapsedTime {
