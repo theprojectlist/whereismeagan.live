@@ -1,0 +1,61 @@
+html,
+body {
+  font-family: "Rubik", sans-serif;
+  text-rendering: optimizeLegibility;
+  font-size: 100%;
+  line-height: 1.5;
+  color: black;
+  width: 100%;
+  height: 100%;
+}
+
+.watermark {
+  position: absolute;
+  font-size: 10rem;
+  opacity: 0.0625;
+  line-height: 8rem;
+  padding: 1rem 1rem 0;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 54rem;
+  padding: 0.67rem 1.5rem 1.5rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  font-family: "Inter", sans-serif;
+}
+
+p {
+  margin: 1.25rem 0;
+}
+
+p span {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+a {
+  color: #1b7fff;
+  text-decoration: none;
+}
+
+#elapsedTime {
+  font-weight: bold;
+}
+
+#map {
+  display: inline-block;
+  width: 720px;
+  height: 480px;
+  max-width: 100%;
+  max-height: 90vh;
+}
+
+.leaflet-popup-content {
+  text-align: center;
+}
