@@ -24,14 +24,15 @@
     const payload = json.response;
     if (payload.hasOwnProperty("errors")) {
       const centerishCDT = [40.921741012763725, -108.03588951589632];
+      map.setView(centerishCDT, 4);
       L.circle(centerishCDT, {
         color: "#3388ff",
         fillOpacity: 0.2,
         radius: 2254691 / 2,
       })
         .addTo(map)
-        .bindPopup("Meagan is hiking approximately in this area.");
-      map.setView(centerishCDT, 4);
+        .bindPopup("Meagan is hiking approximately in this area.")
+        .openPopup();
     } else {
       const lastMsg = payload.feedMessageResponse.messages.message;
       const lastLocation = [lastMsg.latitude, lastMsg.longitude];
