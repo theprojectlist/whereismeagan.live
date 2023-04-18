@@ -7,7 +7,7 @@
   L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
     minZoom: 3,
     attribution:
-      '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+      '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
   }).addTo(map);
 
   async function updateLocation() {
@@ -30,7 +30,7 @@
         radius: 2254691 / 2,
       })
         .addTo(map)
-        .bindPopup("Meagan is hiking somewhere in this area.");
+        .bindPopup("Meagan is hiking approximately in this area.");
       map.setView(centerishCDT, 4);
     } else {
       const lastMsg = payload.feedMessageResponse.messages.message;
